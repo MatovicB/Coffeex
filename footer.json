@@ -1,0 +1,34 @@
+[
+  {
+    "about": {
+      "title": "About",
+      "text": "Ovo je neki tekst kao opis nesto trte mrte moracu da smislim."
+    }
+  },
+  {
+    "menu": {
+      "title": "Menu",
+      "items": [
+        {"text": "Home", "url": "index.html"},
+        {"text": "About Us", "url": "about.html"},
+        {"text": "Gallery", "url": "gallery.html"},
+        {"text": "Services", "url": "services.html"},
+        {"text": "Contact Us", "url": "contact.html"},
+        {"text":"Documentation","url":"documentation.pdf"}
+      ]
+    }
+  },
+  {
+    "contact_us": {
+      "title": "Contact Us",
+      "address": "Address : Loram Ipusm",
+      "phone": "Call : +01 1234567890",
+      "email": "Email : demo@gmail.com",
+      "icons":[
+        {"icon":"fa fa-map-marker"},
+        {"icon":"fa fa-phone"},
+        {"icon":"fa fa-envelope"}
+      ]
+    }
+  }
+]

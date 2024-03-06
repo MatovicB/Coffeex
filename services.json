@@ -1,0 +1,17 @@
+[
+  {
+    "imageSrc": "images/icon1.png",
+    "title": "Original Coffee",
+    "description": "Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea "
+  },
+  {
+    "imageSrc": "images/icon2.png",
+    "title": "20 Coffee Flavors",
+    "description": "Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea "
+  },
+  {
+    "imageSrc": "images/icon3.png",
+    "title": "Pleasant Abient",
+    "description": "Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea "
+  }
+]

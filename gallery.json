@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "images/img-1.png",
+    "alt": "Slika kafe 1",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 2,
+    "imageSrc": "images/img-2.png",
+    "alt": "Slika kafe 2",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 3,
+    "imageSrc": "images/img-3.png",
+    "alt": "Slika kafe 3",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 4,
+    "imageSrc": "images/img-4.png",
+    "alt": "Slika kafe 4",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 5,
+    "imageSrc": "images/img-5.png",
+    "alt": "Slika kafe 5",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 6,
+    "imageSrc": "images/img-6.png",
+    "alt": "Slika kafe 6",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 7,
+    "imageSrc": "images/img-7.png",
+    "alt": "Slika kafe 7",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 8,
+    "imageSrc": "images/img-8.png",
+    "alt": "Slika kafe 8",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  },
+  {
+    "id": 9,
+    "imageSrc": "images/img-9.png",
+    "alt": "Slika kafe 9",
+    "overlay": {
+      "linkHref": "#",
+      "iconClass": "fa fa-search",
+      "iconAriaHidden": true
+    }
+  }
+]
