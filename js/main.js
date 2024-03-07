@@ -397,7 +397,6 @@ function createTestimonials(data) {
 
 /********************** END TESTIMONIAL SECTION *************************/
 
-
 /********************** START CONTACT SECTION *************************/
 
 // Kreiranje prvog div elementa sa klasom 'contact_section' i unutar njega h1 elementa
@@ -422,52 +421,65 @@ const firstColumn = elementsFactory('div', 'col-md-8', 'padding_0');
 // Kreiranje div elementa sa klasom 'mail_section'
 const mailSection = elementsFactory('div', 'mail_section');
 
-// Kreiranje div elementa sa klasom 'email_text'
-const emailText = elementsFactory('div', 'email_text');
+// Kreiranje form elementa
+const formElement = document.createElement('form');
+formElement.setAttribute('id', 'contactForm');
+formElement.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    proveriFormu(); // Call form validation function
+});
 
 // Kreiranje input elemenata za unos imena, email-a i telefonskog broja
-const nameInput = elementsFactory('input', 'email-bt');
+const nameInput = elementsFactory('input', 'email-bt','tbImeIPrezime');
 nameInput.setAttribute('type', 'text');
 nameInput.setAttribute('placeholder', 'Name');
-nameInput.setAttribute('name', 'Name');
+nameInput.setAttribute('name', 'tbImeIPrezime');
+formElement.appendChild(nameInput);
 
-const emailInput = elementsFactory('input', 'email-bt mt-5');
+const emailInput = elementsFactory('input', 'email-bt mt-5','tbEmail');
 emailInput.setAttribute('type', 'text');
 emailInput.setAttribute('placeholder', 'Email');
-emailInput.setAttribute('name', 'Email');
+emailInput.setAttribute('name', 'tbEmail');
+formElement.appendChild(emailInput);
 
-const phoneInput = elementsFactory('input', 'email-bt mt-5');
+const phoneInput = elementsFactory('input', 'email-bt mt-5', 'tbBrojTelefona');
 phoneInput.setAttribute('type', 'text');
 phoneInput.setAttribute('placeholder', 'Phone Number');
-phoneInput.setAttribute('name', 'Phone');
+phoneInput.setAttribute('name', 'tbBrojTelefona');
+formElement.appendChild(phoneInput);
 
 // Kreiranje textarea elementa za unos poruke
-const messageTextarea = elementsFactory('textarea', 'massage-bt mt-5');
+const messageTextarea = elementsFactory('textarea', 'massage-bt mt-5','tbTextArea');
 messageTextarea.setAttribute('placeholder', 'Message');
 messageTextarea.setAttribute('rows', '5');
 messageTextarea.setAttribute('id', 'comment');
-messageTextarea.setAttribute('name', 'Message');
+messageTextarea.setAttribute('name', 'tbTextArea');
+formElement.appendChild(messageTextarea);
+
+// Kreiranje p elementa sa atributom id="ispisGreske"
+const pTagContact = elementsFactory('p');
+pTagContact.id = 'ispisGreske';
 
 // Kreiranje div elementa sa klasom 'send_btn'
 const sendBtn = elementsFactory('div', 'send_btn mt-5');
 
-// Kreiranje div elementa sa klasom 'main_bt' i linka unutar njega
-const mainBtn = elementsFactory('div', 'main_bt');
-const sendLink = document.createElement('a');
-sendLink.setAttribute('href', '#');
-sendLink.textContent = 'SEND';
-mainBtn.appendChild(sendLink);
+// Kreiranje input elementa tipa button
+const mainBtn = elementsFactory('input', 'main_bt');
+mainBtn.setAttribute('type', 'button');
+mainBtn.setAttribute('value', 'SEND');
 sendBtn.appendChild(mainBtn);
 
-// Dodavanje svih elemenata za unos podataka u div 'email_text'
-appendChildToParent(emailText, nameInput);
-appendChildToParent(emailText, emailInput);
-appendChildToParent(emailText, phoneInput);
-appendChildToParent(emailText, messageTextarea);
-appendChildToParent(emailText, sendBtn);
+// Dodavanje event listenera na dugme za slanje forme
+mainBtn.addEventListener('click', function() {
+    proveriFormu();
+});
 
-// Dodavanje 'email_text' div-a u 'mail_section' div
-appendChildToParent(mailSection, emailText);
+// Dodavanje svih elemenata za unos podataka u div 'mail_section'
+appendChildToParent(mailSection, nameInput);
+appendChildToParent(mailSection, emailInput);
+appendChildToParent(mailSection, phoneInput);
+appendChildToParent(mailSection, messageTextarea);
+appendChildToParent(mailSection, sendBtn);
 
 // Dodavanje 'mail_section' div-a u 'firstColumn' div
 appendChildToParent(firstColumn, mailSection);
@@ -490,14 +502,12 @@ appendChildToParent(contactSection2, containerFluid);
 
 // Dodavanje 'contact_section_2' div-a u odgovarajući roditeljski element
 if(contactMain){
-appendChildToParent(contactMain, contactSection);
-appendChildToParent(contactMain, contactSection2);
+    appendChildToParent(contactMain, contactSection);
+    appendChildToParent(contactMain, contactSection2);
 }
 
 
-
 /********************** END CONTACT SECTION *************************/
-
 
 /********************** START FOOTER SECTION *************************/
 
