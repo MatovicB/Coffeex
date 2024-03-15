@@ -11,6 +11,7 @@
       "items": [
         {"text": "Home", "url": "index.html"},
         {"text": "About Us", "url": "about.html"},
+        {"text": "Author", "url": "author.html"},
         {"text": "Gallery", "url": "gallery.html"},
         {"text": "Services", "url": "services.html"},
         {"text": "Contact Us", "url": "contact.html"},

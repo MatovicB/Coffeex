@@ -597,6 +597,7 @@ function createFooter(data) {
 
 /********************** END FOOTER SECTION *************************/
 
+/* START AUTHOR PAGE */
 
 let divClassContainer = elementsFactory("div", "container");
 let divClassRow = elementsFactory("div", "row");
@@ -638,3 +639,5 @@ appendChildToParent(divClassContainer, divClassRow);
 if (document.getElementById("ispisAbout")) {
 	document.getElementById("ispisAbout").appendChild(divClassContainer);
 } else "";
+
+/* END AUTHOR PAGE */
