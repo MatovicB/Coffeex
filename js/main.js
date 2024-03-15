@@ -129,8 +129,8 @@ var row = elementsFactory("div", "row");
 var col1 = elementsFactory("div", "col-md-6");
 var aboutTaitalMain = elementsFactory("div", "about_taital_main");
 var aboutTaital = elementsFactory("div", "about_taital", "", "About Us");
-var aboutText1 = elementsFactory("p", "about_text", "", "Full cleaning and housekeeping services for companies and households.");
-var aboutText2 = elementsFactory("p", "about_text", "", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply");
+var aboutText1 = elementsFactory("p", "about_text", "", "At Coffeex, we pride ourselves on delivering the highest quality coffee beans sourced from around the world, ensuring a rich and flavorful experience with every sip. With a commitment to excellence and customer satisfaction, we guarantee the utmost safety and reliability in every purchase.");
+var aboutText2 = elementsFactory("p", "about_text", "", "Trusted by coffee enthusiasts worldwide, Coffeex has become synonymous with premium quality and unparalleled service, making us the preferred destination for coffee lovers everywhere.");
 var readMore1 = elementsFactory("div", "read_bt");
 var readMoreLink = elementsFactory("a");
 readMoreLink.setAttribute("href", "#");
@@ -162,7 +162,7 @@ appendChildToParent(aboutSection, container);
 
 /********************** END ABOUT US SECTION *************************/
 
-
+/********************** START GALLERY SECTION *************************/
 // Funkcija za dohvat podataka putem AJAX zahteva
 function fetchData(callback) {
     var xhr = new XMLHttpRequest();
@@ -185,7 +185,7 @@ fetchData(function(data) {
     var row1 = elementsFactory("div", "row");
     var col1 = elementsFactory("div", "col-sm-12");
     var galleryTaital = elementsFactory("h1", "gallery_taital", "", "Our Gallery");
-    var galleryText = elementsFactory("p", "gallery_text", "", "Lorem Ipsum is simply dummy text of printing typesetting ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an unknown printer took a galley of type and scra make a type specimen book. It has");
+    var galleryText = elementsFactory("p", "gallery_text", "", "Explore the world of coffee through our captivating gallery, where every image tells a story of craftsmanship, passion, and unparalleled quality. Whether you're a seasoned coffee enthusiast or just beginning your journey, our gallery offers a visual feast that celebrates the artistry and culture of coffee.");
     appendChildToParent(col1, galleryTaital);
     appendChildToParent(col1, galleryText);
     appendChildToParent(row1, col1);
@@ -231,8 +231,10 @@ fetchData(function(data) {
 
 });
 
+/********************** END GALLERY SECTION *************************/
 
-/********************** START ABOUT US SECTION *************************/
+
+/********************** START SERVICES SECTION *************************/
 
 
 // AJAX zahtev
@@ -341,7 +343,7 @@ function createTestimonials(data) {
     const titleHeading = elementsFactory('h1', 'client_taital');
     titleHeading.textContent = 'Testimonial';
     const titleText = elementsFactory('p', 'client_text');
-    titleText.textContent = 'Eeven slightly believable. If you are going to use a passage of Lorem Ipsum, you need to';
+    titleText.textContent = 'These are just some of the messages from our satisfied customers:';
 
     appendChildToParent(titleCol, titleHeading);
     appendChildToParent(titleCol, titleText);
@@ -430,7 +432,7 @@ formElement.addEventListener('submit', function(event) {
 });
 
 // Kreiranje input elemenata za unos imena, email-a i telefonskog broja
-const nameInput = elementsFactory('input', 'email-bt','tbImeIPrezime');
+const nameInput = elementsFactory('input', 'email-bt mt-5','tbImeIPrezime');
 nameInput.setAttribute('type', 'text');
 nameInput.setAttribute('placeholder', 'Name');
 nameInput.setAttribute('name', 'tbImeIPrezime');

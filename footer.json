@@ -2,7 +2,7 @@
   {
     "about": {
       "title": "About",
-      "text": "Ovo je neki tekst kao opis nesto trte mrte moracu da smislim."
+      "text": "Experience Perfection in Every Cup with GrandCoffee."
     }
   },
   {
@@ -21,9 +21,9 @@
   {
     "contact_us": {
       "title": "Contact Us",
-      "address": "Address : Loram Ipusm",
+      "address": "Address : Beograd",
       "phone": "Call : +01 1234567890",
-      "email": "Email : demo@gmail.com",
+      "email": "Email : boban.matovic.93.20@icd.edu.rs",
       "icons":[
         {"icon":"fa fa-map-marker"},
         {"icon":"fa fa-phone"},
