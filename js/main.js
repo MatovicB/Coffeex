@@ -596,3 +596,45 @@ function createFooter(data) {
 }
 
 /********************** END FOOTER SECTION *************************/
+
+
+let divClassContainer = elementsFactory("div", "container");
+let divClassRow = elementsFactory("div", "row");
+let divClassCol12 = elementsFactory("div", "col-md-12");
+let divCLassTitlePage = elementsFactory("div", "titlepage text-center mt-5 mb-5");
+let tagH2About = elementsFactory("h1", "", "", "O autoru");
+let divClassCol5 = elementsFactory("div", "col-md-5");
+let divClassAboutImg = elementsFactory("div", "about_img");
+let tagFigureAbout = elementsFactory("figure");
+let tagImgAbout = elementsFactory("img", "img_responsive rounded");
+tagImgAbout.setAttribute("src", "images/about_me.jpg");
+tagImgAbout.setAttribute("alt", "Slika autora");
+
+let divClassCol7 = elementsFactory("div", "col-md-7 d-flex flex-column align-items-center justify-content-center");
+let tagH1About = elementsFactory("h2", "", "", "Boban Matovic 93/20");
+let tagPAbout = elementsFactory("p", "", "", "Student: ");
+let tagStrong = elementsFactory(
+	"strong",
+	"",
+	"",
+	"AKADEMIJE TEHNIČKO-UMETNIČKIH STRUKOVNIH STUDIJA BEOGRAD"
+);
+
+appendChildToParent(tagPAbout, tagStrong);
+
+appendChildToParent(divClassCol7, tagH1About);
+appendChildToParent(divClassCol7, tagPAbout);
+
+appendChildToParent(tagFigureAbout, tagImgAbout);
+appendChildToParent(divClassAboutImg, tagFigureAbout);
+appendChildToParent(divClassCol5, divClassAboutImg);
+appendChildToParent(divCLassTitlePage, tagH2About);
+appendChildToParent(divClassCol12, divCLassTitlePage);
+appendChildToParent(divClassRow, divClassCol12);
+appendChildToParent(divClassRow, divClassCol5);
+appendChildToParent(divClassRow, divClassCol7);
+appendChildToParent(divClassContainer, divClassRow);
+
+if (document.getElementById("ispisAbout")) {
+	document.getElementById("ispisAbout").appendChild(divClassContainer);
+} else "";
