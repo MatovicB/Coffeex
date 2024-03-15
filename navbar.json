@@ -8,6 +8,10 @@
         "text": "About us"
     },
     {
+        "url": "author.html",
+        "text": "Author"
+    },
+    {
         "url": "gallery.html",
         "text": "Gallery"
     },
